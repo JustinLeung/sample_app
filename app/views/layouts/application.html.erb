@@ -3,9 +3,11 @@
   <head>
 	<title><%= title %></title>
 	<%= csrf_meta_tag %>
+	<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+	<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
   </head>
   <body>
-	<h1><%= @header %></h1>
-	<%= yield %>
+<h1><%= @header %></h1>
+<%= yield %>
   </body>
 </html>
